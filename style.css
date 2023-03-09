@@ -3,3 +3,39 @@ body{
    padding: 0%;
    margin: 0%;
 }
+
+nav{
+   background-color: black;
+   color: white;
+   padding: 20px 20px;
+}
+
+.navTop{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+  
+}
+
+.search{
+   display: flex;
+   align-items: center;
+   background-color: gray;
+   padding: 10px 10px;
+   border-radius: 10px;
+}
+
+.searchInput{
+   border: none;
+   background-color: transparent;
+}
+
+.searchInput{
+   color: lightgrey;
+}
+
+.limitedOffer{
+   font-size: 20px;
+   border-bottom: 2px solid green;
+   cursor: pointer;
+}

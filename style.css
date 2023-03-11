@@ -4,10 +4,11 @@ body{
    margin: 0%;
 }
 
+
 nav{
-   background-color: black;
+   background-color: rgba(0, 0, 0, 0.795);
    color: white;
-   padding: 20px 20px;
+   padding: 10px 30px;
 }
 
 .navTop{
@@ -20,7 +21,7 @@ nav{
 .search{
    display: flex;
    align-items: center;
-   background-color: gray;
+   background-color: rgb(139, 133, 133);
    padding: 10px 10px;
    border-radius: 10px;
 }
@@ -30,7 +31,7 @@ nav{
    background-color: transparent;
 }
 
-.searchInput{
+.searchInput::placeholder{
    color: lightgrey;
 }
 
@@ -39,3 +40,133 @@ nav{
    border-bottom: 2px solid green;
    cursor: pointer;
 }
+
+.navBottom{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.menuItem{
+   margin-right: 50px;
+   cursor: pointer;
+   color: lightgray;
+   font-weight: 400;
+}
+
+.slider{
+   background: url(https://unsplash.com/photos/4RNvfpWOcak);
+    
+}
+
+.sliderWrapper{
+   display: flex;
+   width: 500vw;
+}
+
+
+
+.sliderItem{
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.slideBg{
+   width: 750px;
+   height: 750px;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.sliderImg{
+   height: 700;
+   z-index: 1;
+}
+
+.sliderTitle{
+   position: absolute;
+   top: 10%;
+   right: 10%;
+   font-size: 60px;
+   font-weight: 900;
+   text-align: center;
+   z-index: 1;
+}
+
+.sliderPrice{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   font-size: 50px;
+   font-weight: 300;
+   text-align: center;
+   border: 1px solid gray;
+   z-index: 1;
+}
+
+.buyButton{
+   position: absolute;
+   top: 70%;
+   right: 10%;
+   font-size: 30px;
+   font-weight: 700;
+   color: white;
+   border: 1px solid gray;
+   background-color: black;
+   z-index: 1;
+   cursor: pointer;
+}
+
+.buyButton:hover{
+   background-color: white;
+   color: black;
+}
+
+.sliderItem:nth-child(1) .slideBg{
+   background-color: #369e62;
+   top: 0%;
+}
+
+.sliderItem:nth-child(2) .slideBg{
+   background-color: #b398c2;
+   top: 0%;
+}
+
+.sliderItem:nth-child(3) .slideBg{
+   background-color: #9ff0f3;
+   top: 0%;
+}
+
+.sliderItem:nth-child(4) .slideBg{
+   background-color: #f8ea67;
+   top: 0%;
+}
+
+.sliderItem:nth-child(5) .slideBg{
+   background-color: #c0a9ff;
+   top: 0%;
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+   color: #369e62; 
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+   color: #b398c2; 
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+   color: #9ff0f3;  
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+   color: #f8ea67;
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+  color: #c0a9ff;
+}
+

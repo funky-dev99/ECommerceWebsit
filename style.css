@@ -56,12 +56,13 @@ nav{
 
 .slider{
    background: url(https://unsplash.com/photos/4RNvfpWOcak);
-    
+   overflow: hidden; 
 }
 
 .sliderWrapper{
    display: flex;
    width: 500vw;
+   transition: all 1s ease-in-out;
 }
 
 

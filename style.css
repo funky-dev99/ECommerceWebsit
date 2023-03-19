@@ -1,9 +1,12 @@
+html{
+   scroll-behavior: smooth;
+}
+
 body{
    font-family: 'Lato', sans-serif; 
    padding: 0%;
    margin: 0%;
 }
-
 
 nav{
    background-color: rgba(0, 0, 0, 0.795);
@@ -171,3 +174,102 @@ nav{
   color: #c0a9ff;
 }
 
+.features{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 50px;
+}
+
+.feature{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.featureIcon{
+   width: 50px;
+   height: 50px;
+}
+
+.featureTitle{
+   font-size: 20px;
+   font-weight: 600;
+   margin: 20px;
+}
+
+.featureDesc{
+   color: gray;
+   width: 50%;
+   height: 100px;
+}
+
+.product{
+   height: 100vh;
+   background-color: rgb(102, 102, 102);
+   position: relative;
+   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.productImg{
+   width: 50%;
+  
+}
+
+.productDetails{
+   position: absolute;
+   top: 10%;
+   right: 0;
+   width: 40%;
+   padding: 50px;
+}
+
+.productTitle{
+   font-size: 75px;
+   font-weight: 900;
+}
+
+.productDesc{
+   font-size: 15px;
+   color: gray;
+}
+
+.colors,.sizes{
+   display: flex;
+   margin-bottom: 20px;
+}
+.color{
+   width: 32px;
+   height: 32px;
+   border-radius: 5px;
+   background-color: white;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.color:last-child{
+   background-color: black;
+}
+
+.size{
+   padding: 5px 20px;
+   border: 1px solid;
+   margin-right: 10px;
+   cursor: pointer;
+   font-size: 20px;
+}
+
+.productButton{
+   float: right;
+   padding: 10px 20px;
+   background-color: black;
+   color: white;
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.productButton:hover{
+   background-color: white;
+   color: black;
+}
